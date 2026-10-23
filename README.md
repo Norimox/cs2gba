@@ -1,43 +1,117 @@
-# CSPSP
+# CS2GBA 
 
-![screenshot1](https://user-images.githubusercontent.com/2881968/173958305-68c42c56-7d0d-49db-8a21-fbd25b0f7e6c.png)
-![screenshot2](https://user-images.githubusercontent.com/2881968/173957027-63d38e88-00fd-4d98-91b7-109fe53518d4.png)
+CS2GBA is an unofficial tactical 2D shooter for the Game Boy Advance, inspired by the classic Counter-Strike, CS2D, and CSPSP games.
 
-CSPSP is a homebrew game for the Sony PSP, created in 2006 and updated through 2011. It is a 2d top-down shooter heavily based on Counter-Strike, with similar round-based team gameplay and weapon selection. It features fully multiplayer gameplay via community-hosted servers.
+Version 5.9 is the first public release of the project. This release contains a compiled ROM only; source code is not included.
 
-The game is unfortunately mostly dead now, but for those who are nostalgic, the game is still available to download - see the [Releases](https://github.com/kevinbchen/cspsp/releases) page.
+## Current Features
 
-- Website / master server: https://cspsp.appspot.com
-- CSPSP Server application: https://github.com/kevinbchen/cspspserver
+- Matches with up to five players per team: one human player and up to nine bots.
+- Five maps:
+  - `fy_hangar`
+  - `fy_poolday`
+  - `cs_office`
+  - `de_dust2`
+  - `cs_mansion`
+- Bots with pathfinding, target distribution, distance control, obstacle avoidance, and combat repositioning.
+- CT and T teams with different character models.
+- Round system, economy, weapon purchasing, and weapon pickups.
+- Pistols, a submachine gun, a shotgun, and team-specific rifles.
+- Weapon and interface sound effects.
+- Spectator mode after death.
+- English and Russian language support.
+- Main menu, options, controls, game information, and developer support screens.
+- Updated collision and navigation on `cs_mansion`.
+- Unified HUD colors and fixes for interface rendering artifacts.
 
-> **Warning**: I created this project back in high school and didn't expect to open source it, so the code is messy and, to put it mildy, not well written. I would not use this as any kind of reference :)
+## Controls
 
-## Playing
+- D-pad — movement.
+- `L` / `R` — rotate.
+- `A` — fire or confirm.
+- `B` — reload or return to the previous menu.
+- `Select` — switch weapons.
+- `Start` — pause.
+- `L + R + B` — drop the current weapon.
+- In spectator mode, press `A` to switch between active players.
 
-CSPSP should run on any PSP with a custom firmware; simply copy the game into ms0:/PSP/GAME/ like any other homebrew. The most recent v1.92b release has some very minor fixes to get multiplayer working again, though there probably won't be any other players or servers online.
+## Project Status
 
-![controls](https://user-images.githubusercontent.com/2881968/173964080-ab480a79-af94-454a-bdfe-a2a56b491cad.png)
+This is an early public version. Bugs, visual inconsistencies, and unexpected bot behavior may still occur.
 
-### PPSSPP
-You can also run CSPSP using the [PPSSPP](https://www.ppsspp.org/) emulator, though the latest official release does not yet support online functionality. However, online/infrastructure support is in development (https://github.com/hrydgard/ppsspp/issues/14256), and you can find links to test builds that do already support CSPSP online (e.g. https://github.com/hrydgard/ppsspp/issues/14256#issuecomment-1136256118).
+GBA Link Cable multiplayer is not currently implemented and is being considered as a separate experimental stage of development.
 
-## Building
+## Legal Notice and Disclaimer
 
-The repo has been updated and tested to build with Minimalist PSPSDK 0.10.0 on Windows.
-1. Download and install [MINPSPW 0.10.0](https://sourceforge.net/projects/minpspw/files/SDK%20%2B%20devpak/pspsdk%200.10.0/)
-2. Clone the repo and go to `jge/Projects/cspsp`.
-3. `make clean` and `make 3xx`, 
-4. Copy the created `EBOOT.pbp` to the `bin/` folder.
-5. Copy the entire `bin/` folder to `ms0:/PSP/GAME/` on your PSP (and optionally rename the directory to `CSPSP/`).
+CS2GBA is an unofficial fan-made homebrew project. It is not affiliated with, authorized by, licensed by, sponsored by, or endorsed by Valve Corporation, Nintendo, Unreal Software, CS2D, CSPSP, or their respective authors and rights holders.
 
-The JGE library that CSPSP uses is technically cross-platform, and during the original development I primarily ran on Windows XP with Visual Studio 2005. However, I have not tried this recently; the VS solution/project files are provided as-is and will likely require some fixing up.
+Counter-Strike, Game Boy Advance, CS2D, CSPSP, map names, logos, trademarks, characters, and other related intellectual property belong to their respective owners.
 
-**Important**: If you are making any incompatible changes to the networking (for example, adding or changing message types), please update the `NETVERSION` define in [jge/Projects/cspsp/src/GameApp.h](jge/Projects/cspsp/src/GameApp.h).
+The project contains original development as well as adapted materials, visual references, and gameplay concepts originating from Counter-Strike, CS2D, and CSPSP. The CS2GBA author does not claim ownership of any third-party trademarks or materials. All rights to such elements remain with their respective owners.
 
-## Ports
+The ROM is distributed free of charge solely as an unofficial demonstration of a fan-made project. It may not be sold, included in paid collections, commercially redistributed, or represented as an official product. Any optional support or donation mentioned in the game or project description is not a payment for the ROM and does not provide a license, exclusive content, or gameplay advantages.
 
-Other developers have also made some really cool ports of CSPSP to other platforms!
+This release contains a compiled ROM only. No source-code license or permission to use, modify, or distribute the source code is granted through this release. Downloading the ROM also does not transfer any rights to third-party materials contained within it.
 
-- [CSWEB](https://github.com/frankplus/csweb) - WebGL port by @frankplus
-  - [Live Demo](https://frankplus.github.io/)
-- [CS3DS](https://github.com/machinamentum/CS3DS) - Nintendo 3DS port by @machinamentum
+The ROM is provided “as is,” without warranties of any kind, including warranties of functionality, compatibility, data integrity, or freedom from defects. Users are responsible for complying with the laws of their jurisdiction and the rules applicable to the hardware or software they use.
+
+This disclaimer does not replace permission from a rights holder where such permission is required by applicable law. If you are a rights holder and believe that material belonging to you has been used improperly, please contact the repository owner so that attribution, replacement, or removal of the relevant material can be reviewed.
+_______________________________________
+# CS2GBA v5.9
+
+CS2GBA — неофициальный тактический 2D-шутер для Game Boy Advance, вдохновлённый классическими Counter-Strike, CS2D и CSPSP.
+
+Версия 5.9 — первый публичный выпуск проекта. Распространяется готовый файл ROM; исходный код в этот релиз не входит.
+
+## Что уже реализовано
+
+- Матчи до 5 на 5: игрок и до девяти ботов.
+- Пять карт:
+  - `fy_hangar`
+  - `fy_poolday`
+  - `cs_office`
+  - `de_dust2`
+  - `cs_mansion`
+- Боты с поиском маршрута, распределением целей, удержанием дистанции, обходом препятствий и сменой позиции.
+- Команды CT и T с разными моделями персонажей.
+- Раунды, экономика, покупка и подбор оружия.
+- Пистолеты, пистолет-пулемёт, дробовик и командные винтовки.
+- Звуковые эффекты оружия и интерфейса.
+- Режим наблюдения после смерти.
+- Английский и русский языки.
+- Главное меню, настройки, управление, раздел об игре и экран поддержки автора.
+- Исправленные коллизии и маршруты на `cs_mansion`.
+- Единая цветовая палитра HUD и исправления графических артефактов интерфейса.
+
+## Управление
+
+- Крестовина — движение.
+- `L` / `R` — поворот.
+- `A` — стрельба и подтверждение.
+- `B` — перезарядка или возврат в меню.
+- `Select` — смена оружия.
+- `Start` — пауза.
+- `L + R + B` — выбросить оружие.
+- В режиме наблюдения `A` переключает активных игроков.
+
+## Статус проекта
+
+Это ранняя публичная версия. В ней могут встречаться ошибки, визуальные неточности и особенности поведения ботов.
+
+Многопользовательская игра через GBA Link Cable пока не реализована и рассматривается как отдельный экспериментальный этап разработки.
+
+## Правовая информация и отказ от ответственности
+
+CS2GBA является неофициальным фанатским homebrew-проектом. Проект не связан с Valve Corporation, Nintendo, Unreal Software, CS2D, CSPSP либо их авторами и правообладателями, а также не был ими одобрен, лицензирован, спонсирован или поддержан.
+
+Названия Counter-Strike, Game Boy Advance, CS2D, CSPSP, названия карт, логотипы, товарные знаки, персонажи и другие связанные элементы интеллектуальной собственности принадлежат соответствующим правообладателям.
+
+Проект содержит оригинальную разработку, а также адаптированные материалы, визуальные ориентиры и игровые идеи, происходящие из Counter-Strike, CS2D и CSPSP. Автор CS2GBA не заявляет права собственности на сторонние товарные знаки и материалы. Все права на такие элементы сохраняются за их соответствующими владельцами.
+
+ROM распространяется бесплатно и исключительно как неофициальная демонстрационная версия фанатского проекта. Его запрещено продавать, включать в платные сборники, использовать для коммерческой перепродажи либо представлять как официальный продукт. Добровольная поддержка автора, если она упоминается в игре или описании проекта, не является платой за ROM и не предоставляет лицензию, эксклюзивный контент или игровые преимущества.
+
+Этот выпуск содержит только скомпилированный ROM. Исходный код и лицензия на его использование, изменение или распространение данным выпуском не предоставляются. Получение ROM также не передаёт пользователю каких-либо прав на содержащиеся в нём сторонние материалы.
+
+ROM предоставляется «как есть», без каких-либо гарантий работоспособности, совместимости, сохранности данных или отсутствия ошибок. Пользователь самостоятельно несёт ответственность за соблюдение законодательства своей страны и правил используемого оборудования или программного обеспечения.
+
+Настоящий дисклеймер не заменяет разрешений правообладателей, если такие разрешения требуются применимым законодательством. Если вы являетесь правообладателем и считаете, что в проекте неправомерно используется принадлежащий вам материал, свяжитесь с владельцем репозитория для рассмотрения вопроса об указании авторства, замене или удалении соответствующего материала.

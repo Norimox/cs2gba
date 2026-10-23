@@ -1,3 +1,6 @@
+<img width="300" height="300" alt="cs2gba logo" src="https://github.com/user-attachments/assets/dd546e2b-9723-4de1-9a00-2040caab02f9" />
+
+
 # CS2GBA 
 
 CS2GBA is an unofficial tactical 2D shooter for the Game Boy Advance, inspired by the classic Counter-Strike, CS2D, and CSPSP games.
@@ -56,6 +59,10 @@ This release contains a compiled ROM only. No source-code license or permission 
 The ROM is provided “as is,” without warranties of any kind, including warranties of functionality, compatibility, data integrity, or freedom from defects. Users are responsible for complying with the laws of their jurisdiction and the rules applicable to the hardware or software they use.
 
 This disclaimer does not replace permission from a rights holder where such permission is required by applicable law. If you are a rights holder and believe that material belonging to you has been used improperly, please contact the repository owner so that attribution, replacement, or removal of the relevant material can be reviewed.
+
+<img width="1253" height="702" alt="Снимок экрана — 2026-10-23 в 14 14 57" src="https://github.com/user-attachments/assets/c65bbb5a-dec9-4396-b845-a17a43a26dad" />
+<img width="1260" height="711" alt="Снимок экрана — 2026-10-23 в 14 14 20" src="https://github.com/user-attachments/assets/3235fc44-47b2-4592-9dfb-909c508e2d7b" />
+
 _______________________________________
 # CS2GBA v5.9
 

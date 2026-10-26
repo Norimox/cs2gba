@@ -5,8 +5,6 @@
 
 CS2GBA is an unofficial tactical 2D shooter for the Game Boy Advance, inspired by the classic Counter-Strike, CS2D, and CSPSP games.
 
-Version 5.9 is the first public release of the project. This release contains a compiled ROM only; source code is not included.
-
 ## Current Features
 
 - Matches with up to five players per team: one human player and up to nine bots.
@@ -63,11 +61,9 @@ The ROM is provided “as is,” without warranties of any kind, including warra
 <img width="1260" height="711" alt="Снимок экрана — 2026-10-23 в 14 14 20" src="https://github.com/user-attachments/assets/3235fc44-47b2-4592-9dfb-909c508e2d7b" />
 
 _______________________________________
-# CS2GBA v5.9
+# CS2GBA
 
 CS2GBA — неофициальный тактический 2D-шутер для Game Boy Advance, вдохновлённый классическими Counter-Strike, CS2D и CSPSP.
-
-Версия 5.9 — первый публичный выпуск проекта. Распространяется готовый файл ROM; исходный код в этот релиз не входит.
 
 ## Что уже реализовано
 
